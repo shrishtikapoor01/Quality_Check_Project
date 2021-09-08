@@ -1,0 +1,115 @@
+<html>
+  <style>
+    body{     
+      background-repeat: no-repeat;  
+          background-size: cover;         
+    }
+    .head{
+      width: 100%;
+      height: 20%;
+      background-image: url('black.jpg');
+      background-repeat: no-repeat;  
+      background-size: cover;
+      border: thin;
+      border-color: rgb(26, 23, 23);
+    }
+    .form{
+      width: 100%;
+      height: 100%;
+      background-image: url('wine.jpg');
+      background-repeat: no-repeat;  
+      background-size: cover;
+      display: inline-block;
+
+    }
+      .block {
+        display: inline-block;
+        width: 28%;
+        border: solid;
+        margin-left: 200px;
+        color: rgb(24, 22, 22);
+        padding: 14px 28px;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+        margin-right: 460px;
+      }
+      
+      .block:hover {
+        background-color: rgb(240, 234, 234);
+        color: rgb(194, 34, 34);
+      }
+      .enter{
+        position:absolute;
+        top: 135px;
+        left: 430px;
+        z-index: 2;
+      }
+      input{
+        float: right;
+        margin-right: 300px;
+      }
+      span{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bolder;
+        font-style: oblique;
+        font-size: 170%;
+        color: rgb(238, 226, 226);
+        margin-left: 280px;
+      }
+  </style>            
+
+  <body>
+    <div class='head'>
+    <h1 style="font-size: 600%; background-image: 'black.jpg'; font-family:'Times New Roman', Times, serif; text-align: center;color:rgb(238, 226, 226);" >Quality Analysis</h1>
+    </div>
+    <div class='form'>
+      <img src="img.jpg" class="enter" height="100px" width="400px">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    <form action="output" method="GET">
+      <span> Fixed Acidity :                    </span>
+      <input type="number" name="fixed_acidity" step="0.000001">
+      <br>
+      <span> Acidity :                    </span>
+      <input type="number" name="volatile_acidity" step="0.000001">
+      <br>
+      <span> Acid :                    </span>
+      <input type="number" name="citric_acid" step="0.000001">
+      <br>
+      <span> Chlorides :                    </span>
+      <input type="number" name="chlorides" step="0.000001">
+      <br>
+      <span> Sugar :                    </span>
+      <input type="number" name="residual_sugar" step="0.000001">
+      <br>      
+      <span> Free Sulfur-dioxide :                    </span>
+      <input type="number" name="free_sulfur_dioxide" step="0.000001">
+      <br>      
+      <span> Total Sulfur-dioxide :                    </span>
+      <input type="number" name="total_sulfur_dioxide" step="0.000001">
+      <br>      
+      <span> Density :                    </span>
+      <input type="number" name="density" step="0.000001">
+      <br>      
+      <span> pH :                    </span>
+      <input type="number" name="pH" step="0.000001">
+      <br>      
+      <span> Sulphates :                    </span>
+      <input type="number" name="sulphates" step="0.000001">
+      <br>      
+      <span> Alcohol :                    </span>
+      <input type="number" name="alcohol" step="0.000001">
+      <br>
+      <br>
+      <input type="submit" value="Go for Test" class="block">
+    </form>
+    </div>
+  </body>
+</html>
